@@ -2,14 +2,14 @@ import React from 'react';
 
 const Sidebar: React.FC = () => {
     return (
-        <aside>
+        <aside className="bg-gray-200 w-64 p-4">
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/admin">Admin</a></li>
-                    <li><a href="/user">User</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/categories">Categories</a></li>
+                <ul className="space-y-2">
+                    <li><a className="text-gray-800" href="/">Home</a></li>
+                    <li><a className="text-gray-800" href="/admin">Admin</a></li>
+                    <li><a className="text-gray-800" href="/user">User</a></li>
+                    <li><a className="text-gray-800" href="/products">Products</a></li>
+                    <li><a className="text-gray-800" href="/categories">Categories</a></li>
                 </ul>
             </nav>
         </aside>
