@@ -1,0 +1,19 @@
+/* Custom styles for ShopSmart */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}

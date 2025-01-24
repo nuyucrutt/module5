@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
+import '../app/style.css';
 
 const HomePage: React.FC = () => {
     return (
