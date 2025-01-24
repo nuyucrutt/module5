@@ -7,7 +7,7 @@ const Header: React.FC = () => {
             <Link href="/">
                 <img src="/logo.png" alt="ShopSmart Logo" className="h-8" />
             </Link>
-            <h1>ShopSmart</h1>
+            <h1>NHShop</h1>
             <blockquote className="italic">Your one-stop shop for all your needs!</blockquote>
         </header>
     );
