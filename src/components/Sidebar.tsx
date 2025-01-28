@@ -1,19 +1,34 @@
-import React from 'react';
-import Link from 'next/link';
+"use client";
+
+import React, { useEffect, useState } from 'react';
+
+interface Product {
+    id: number;
+    title: string;
+}
 
 const Sidebar: React.FC = () => {
+    const [products, setProducts] = useState<Product[]>([]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            const response = await fetch('https://api.escuelajs.co/api/v1/products');
+            const data = await response.json();
+            setProducts(data);
+        };
+
+        fetchProducts();
+    }, []);
+
     return (
-        <aside className="bg-gray-200 w-64 p-4">
-            <nav>
-                <ul className="space-y-2">
-                    <li><Link className="text-gray-800" href="/">Home</Link></li>
-                    <li><Link className="text-gray-800" href="/admin">Admin</Link></li>
-                    <li><Link className="text-gray-800" href="/user">User</Link></li>
-                    <li><Link className="text-gray-800" href="/products">Products</Link></li>
-                    <li><Link className="text-gray-800" href="/categories">Categories</Link></li>
-                </ul>
-            </nav>
-        </aside>
+        <div className="sidebar">
+            <h2 className="text-xl">Products</h2>
+            <ul>
+                {products.map(product => (
+                    <li key={product.id}>{product.title}</li>
+                ))}
+            </ul>
+        </div>
     );
 };
 

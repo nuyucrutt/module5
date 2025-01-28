@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from 'react';
 
 interface User {
@@ -38,17 +40,17 @@ const UserManagement: React.FC = () => {
     return (
         <div>
             <h2 className="text-xl">User Management</h2>
-            <input 
-                type="text" 
-                value={newUserName} 
-                onChange={(e) => setNewUserName(e.target.value)} 
+            <input
+                type="text"
+                value={newUserName}
+                onChange={(e) => setNewUserName(e.target.value)}
                 placeholder="New User Name"
                 className="border p-2"
             />
-            <input 
-                type="email" 
-                value={newUserEmail} 
-                onChange={(e) => setNewUserEmail(e.target.value)} 
+            <input
+                type="email"
+                value={newUserEmail}
+                onChange={(e) => setNewUserEmail(e.target.value)}
                 placeholder="New User Email"
                 className="border p-2"
             />

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from 'react';
 
 interface Category {
@@ -35,10 +37,10 @@ const CategoryManagement: React.FC = () => {
     return (
         <div>
             <h2 className="text-xl">Category Management</h2>
-            <input 
-                type="text" 
-                value={newCategoryName} 
-                onChange={(e) => setNewCategoryName(e.target.value)} 
+            <input
+                type="text"
+                value={newCategoryName}
+                onChange={(e) => setNewCategoryName(e.target.value)}
                 placeholder="New Category Name"
                 className="border p-2"
             />
