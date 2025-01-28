@@ -25,7 +25,7 @@ header {
     transform: scale(1.02); /* Slightly enlarge on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
-
+    
 .cart-title {
     font-weight: bold;
     margin-top: 20px;
@@ -135,4 +135,19 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #007bff; /* Change color on hover */
+}
+
+/* Product List Styles */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    gap: 20px; /* Space between items */
+}
+
+.product-list-item {
+    border: 1px solid #ddd; /* Add a border to product items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside product items */
+    background-color: #fff; /* White background for product items */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
 }
