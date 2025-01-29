@@ -10,16 +10,16 @@ const Payment: React.FC = () => {
     );
 };
 
-// Fetch data on each request
-export const getServerSideProps = async () => {
-    // Fetch any necessary data here
-    // For example, you might fetch user data or payment options
+// // Fetch data on each request
+// export const getServerSideProps = async () => {
+//     // Fetch any necessary data here
+//     // For example, you might fetch user data or payment options
 
-    return {
-        props: {
-            // Pass data to the page via props
-        },
-    };
-};
+//     return {
+//         props: {
+//             // Pass data to the page via props
+//         },
+//     };
+// };
 
 export default Payment;

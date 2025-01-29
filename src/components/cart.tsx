@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'; // Use next/navigation for the latest Next.js version
 
+
 interface Product {
     id: number;
     title: string;
@@ -41,7 +42,7 @@ const ProductList: React.FC = () => {
     };
 
     const handleCheckout = () => {
-        router.push('/payment'); // Navigate to the payment page
+        router.push('../app'); // Navigate to the payment page
     };
 
     const calculateTotal = () => {
